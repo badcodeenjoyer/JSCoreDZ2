@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let height = prompt("Задайте висоту прямокутника");
+    let width = prompt("Задайте ширину прямокутника")
+    let heightCount = parseInt(height);
+    let widthCount=parseInt(width);
+    let star = '*';
+    let whitespace = '&nbsp';
+    for (let i =0 ; i<=heightCount;++i){
+if (i===0){
+    document.write(star.repeat(widthCount));
+    document.write("<br>");
+}
+if (i>0&&i<heightCount){
+    document.write(star);document.write(whitespace.repeat(((widthCount-2)*2)));document.write(star);
+    document.write("<br>");
+}
+if (i===heightCount){
+    document.write(star.repeat(widthCount));
+    document.write("<br>");
+}
+
+   }
+   document.write("<br>");
+
+   let heightOfTriangle = prompt("Задайте висоту прямокутного трикутника");
+   let heightOfTriangleValue = parseInt(heightOfTriangle);
+   for (let i = 0 ; i <=heightOfTriangleValue;++i){
+       if (i<3){
+           document.write(star.repeat(i));
+           document.write("<br>");
+       }
+
+
+       if (i>=3&& i <heightOfTriangleValue){
+           document.write(star);document.write(whitespace.repeat(((i-2)*2)));document.write(star);
+           document.write("<br>");
+       }
+       if (i===heightOfTriangleValue){
+document.write(star.repeat(i));document.write("<br>");
+       }
+   }
+   document.write("<br>");
+
+   let heightOfEqualTriangle = prompt("Задайте висоту рівностороннього трикутника");
+   let heightOfEqualTriangleValue = parseInt(heightOfEqualTriangle);
+
+   for (let i = 0 ; i <=heightOfEqualTriangleValue;++i){
+       if (i===0){
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2));document.write(star);
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2))
+           document.write("<br>");
+       }
+       if (i>0&&i<2){
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2+1));document.write(star.repeat((i)*2));
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2+1))
+           document.write("<br>");
+
+       }
+       if (i>=2&& i <heightOfEqualTriangleValue){
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2+1));
+           document.write(star);
+           document.write(whitespace.repeat((i-1)*4));
+           document.write(star);
+           document.write(whitespace.repeat((heightOfEqualTriangleValue-i)*2+1));
+           document.write("<br>");
+       }
+       if (i===heightOfEqualTriangleValue) {
+           document.write(whitespace);
+           document.write(star.repeat((i)*2));
+           document.write("<br>");
+       }
+   }
+   let heightOfRhombus = prompt("Задайте висоту ромба ");
+   let heightOfRhombusValue = parseInt(heightOfRhombus);
+   for (let i = 0 ; i <=heightOfRhombusValue;++i){
+       if (i===0){
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2));document.write(star);
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2))
+           document.write("<br>");
+       }
+       if (i>0&&i<2){
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2+1));document.write(star.repeat((i)*2));
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2+1))
+           document.write("<br>");
+
+       }
+       if (i>=2&& i <((heightOfRhombusValue/2))){
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2+1));
+           document.write(star);
+           document.write(whitespace.repeat((i-1)*4));
+           document.write(star);
+           document.write(whitespace.repeat((heightOfRhombusValue-i)*2+1));
+           document.write("<br>");
+       }
+       if (i>=((heightOfRhombusValue/2))&&i<heightOfRhombusValue){
+           document.write(whitespace.repeat(((heightOfRhombusValue+i-2))));
+           document.write(star);
+           document.write(whitespace.repeat(((heightOfRhombusValue-i-2)*4)));
+           document.write(star);
+           document.write(whitespace.repeat(((heightOfRhombusValue+i-2))));
+           document.write("<br>");
+
+       }
+
+       if (i===heightOfRhombusValue){
+           document.write(whitespace.repeat((heightOfRhombusValue)*2));document.write(star);
+           document.write(whitespace.repeat((heightOfRhombusValue)*2))
+           document.write("<br>");
+       }
+
+   }
+
+
+</script>
+</body>
+</html>

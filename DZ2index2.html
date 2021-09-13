@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let color;
+color = prompt("Guess the color with 5 attempts");
+let attempts = 5;
+while(attempts!==0){
+    if (color === "red"){
+        console.log("Congratulation you won with",attempts,"attempts");
+        break;
+    }
+    else{
+        attempts--;
+        color = prompt("No , try another color");
+    }
+
+}
+console.log("You lost(((");
+</script>
+</body>
+</html>

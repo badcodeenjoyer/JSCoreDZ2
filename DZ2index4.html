@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let map;
+    do {
+
+      map = prompt("Куди прямуєш - r/l/t/b");
+      switch (map) {
+          case("r"):
+              document.writeln("right ")
+             break;
+          case("l"):
+              document.writeln("left ")
+              break;
+          case("t"):
+              document.writeln("to up ")
+              break;
+          case("b"):
+              document.writeln("back down ")
+              break;
+
+      }
+  }while ((map!=="cancel"))
+
+
+  document.write("Маршрут складено");
+</script>
+</body>
+</html>
